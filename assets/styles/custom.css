@@ -10,35 +10,86 @@
     --color-9: #3874ff;
     --color-10: #3874ff;
     --color-11: #3874ff;
+    --color-12: #525b75;
+    --color-13: #ed2000;
+    --color-14: #373c48;
+    --color-15: #ffffff;
 }
 
-/* background color */
+/* color */
 .bg-color-1 {
     background-color: var(--color-2)
 }
-.bg-color-3 {
+
+.bg-color-13 {
+    background-color: var(--color-13)
+}
+
+.bg-color-7 {
+    background-color: var(--color-7)
+}
+
+.color-3 {
     color: var(--color-3)
 }
 
-/* text color */
-.text-color-1 {
+.color-8 {
+    color: var(--color-8)
+}
+
+.color-12 {
+    color: var(--color-12);
+}
+
+.color-1 {
     color: var(--color-1)
 }
 
+
+
 /* font size */
-.cus-size {
+.cus-icon-search-size {
+    font-size: 0.8rem;
+}
+
+.cs-font-size-sticker-number {
     font-size: 0.8rem;
 }
 
 /* position */
-.cus-posi {
+.cus-icon-search-position {
     top: 38%;
 }
 /* padding */
-.cus-ps {
+.cus-search-padding {
     padding-left: 36px;
 }
-
+/* :: */
 .cus-search::placeholder {
     opacity: 75%;
 }
+
+/* with height */
+.cus-bg-size-turn-theme {
+    width: 2rem;
+    height: 2rem;
+}
+
+.cus-bg-size-sticker-number {
+    width: 1.2rem;
+    height: 1.2rem;
+    top: 2px;
+    right: -3px;
+}
+
+.cus-bg-size-sticker-bell {
+    width: .6rem;
+    height: .6rem;
+    top: 5px;
+    right: 7px;
+}
+
+.custom-tooltip {
+    --bs-tooltip-bg: var(--color-14);
+    --bs-tooltip-color: var(--color-15);
+  }

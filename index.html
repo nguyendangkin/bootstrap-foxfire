@@ -9,9 +9,10 @@
             href="./assets/images/logos/logo.png"
         />
         <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
             rel="stylesheet"
-            href="./assets/librarys/bootstrap-5.3.3-dist/css/bootstrap.min.css"
         />
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
         <link
             rel="stylesheet"
             href="./assets/librarys/fontawesome-free-6.5.1-web/css/all.min.css"
@@ -34,7 +35,7 @@
                                     alt="logo-foxfire"
                                     width="27"
                                 />
-                                <span class="fs-4 ms-2 text-color-1 fw-medium"
+                                <span class="fs-4 ms-2 color-1 fw-medium"
                                     >Foxfire</span
                                 >
                             </a>
@@ -43,30 +44,60 @@
                             class="d-flex w-50 align-items-center position-relative"
                         >
                             <i
-                                class="position-absolute cus-size cus-posi bg-color-3 fa-solid fa-magnifying-glass ms-3"
+                                class="position-absolute cus-icon-search-size cus-icon-search-position color-3 fa-solid fa-magnifying-glass ms-3"
                             ></i>
                             <input
                                 type="text"
                                 placeholder="Search"
-                                class="form-control form-control-sm rounded-pill cus-ps cus-search"
+                                class="fs-6 form-control form-control-sm pt-1 pb-1 rounded-pill cus-search-padding cus-search"
                             />
                         </form>
-                        <div class="d-flex">
-                            <div class="omatroi">
-                                <i class="fa-solid fa-sun"></i>
+                        <div
+                            class="d-flex align-items-center justify-content-between"
+                        >
+                            <div
+                                class="ms-2 p-2 d-flex align-items-center bg-color-7 cus-bg-size-turn-theme rounded-circle justify-content-center"
+                                role="button"
+                                data-bs-toggle="tooltip"
+                                data-bs-custom-class="custom-tooltip"
+                                data-bs-placement="left"
+                                data-bs-title="Switch theme"
+                            >
+                                <i class="fa-solid fa-sun color-8"></i>
                             </div>
-                            <div class="">
-                                <div class="">
-                                    <span>3</span>
-                                </div>
-                                <i class="fa-solid fa-bag-shopping"></i>
+                            <div
+                                class="ms-2 p-2 d-flex align-items-center position-relative"
+                            >
+                                <a href="#">
+                                    <div
+                                        class="rounded-circle position-absolute cus-bg-size-sticker-number bg-primary d-flex align-items-center justify-content-center"
+                                    >
+                                        <span
+                                            class="fw-medium cs-font-size-sticker-number text-white"
+                                            >3</span
+                                        >
+                                    </div>
+                                    <i
+                                        class="fa-solid fa-bag-shopping color-12 fs-5"
+                                    ></i>
+                                </a>
                             </div>
-                            <div class="">
-                                <div class="">.</div>
-                                <i class="fa-regular fa-bell"></i>
+                            <div
+                                class="ms-2 p-2 d-flex align-items-center position-relative"
+                            >
+                                <a href="#">
+                                    <div
+                                        class="cus-bg-size-sticker-bell bg-color-13 rounded-circle position-absolute"
+                                    ></div>
+                                    <i
+                                        class="fs-5 fa-regular fa-bell color-12"
+                                    ></i>
+                                </a>
                             </div>
-                            <div class="">
-                                <i class="fa-regular fa-user"></i>
+                            <div class="ms-2 fs-6 p-2">
+                                <a href="#">
+                                    <i class="fa-regular fa-user color-12"></i
+                                ></a>
                             </div>
                         </div>
                     </nav>
@@ -75,6 +106,15 @@
             <main>b</main>
             <footer>c</footer>
         </div>
-        <script src="./assets/librarys/bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
+        <script>
+            var tooltipTriggerList = [].slice.call(
+                document.querySelectorAll('[data-bs-toggle="tooltip"]')
+            );
+            var tooltipList = tooltipTriggerList.map(function (
+                tooltipTriggerEl
+            ) {
+                return new bootstrap.Tooltip(tooltipTriggerEl);
+            });
+        </script>
     </body>
 </html>
