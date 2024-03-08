@@ -22,87 +22,402 @@
     </head>
     <body>
         <div class="app">
-            <header class="bg-color-1">
-                <div class="container">
-                    <nav class="navbar">
-                        <div>
-                            <a
-                                class="d-flex align-items-center text-decoration-none"
-                                href="linklogo"
-                            >
-                                <img
-                                    src="./assets/images/logos/logo.png"
-                                    alt="logo-foxfire"
-                                    width="27"
-                                />
-                                <span class="fs-4 ms-2 color-1 fw-medium"
-                                    >Foxfire</span
+            <header>
+                <div class="bg-color-1">
+                    <div class="container">
+                        <nav class="navbar">
+                            <div>
+                                <a
+                                    class="d-flex align-items-center text-decoration-none"
+                                    href="linklogo"
                                 >
-                            </a>
-                        </div>
-                        <form
-                            class="d-flex w-50 align-items-center position-relative"
-                        >
-                            <i
-                                class="position-absolute cus-icon-search-size cus-icon-search-position color-3 fa-solid fa-magnifying-glass ms-3"
-                            ></i>
-                            <input
-                                type="text"
-                                placeholder="Search"
-                                class="fs-6 form-control form-control-sm pt-1 pb-1 rounded-pill cus-search-padding cus-search"
-                            />
-                        </form>
-                        <div
-                            class="d-flex align-items-center justify-content-between"
-                        >
-                            <div
-                                class="ms-2 p-2 d-flex align-items-center bg-color-7 cus-bg-size-turn-theme rounded-circle justify-content-center"
-                                role="button"
-                                data-bs-toggle="tooltip"
-                                data-bs-custom-class="custom-tooltip"
-                                data-bs-placement="left"
-                                data-bs-title="Switch theme"
+                                    <img
+                                        src="./assets/images/logos/logo.png"
+                                        alt="logo-foxfire"
+                                        width="27"
+                                    />
+                                    <span class="fs-4 ms-2 color-1 fw-medium"
+                                        >Foxfire</span
+                                    >
+                                </a>
+                            </div>
+                            <form
+                                class="d-flex w-50 align-items-center position-relative"
                             >
                                 <i
-                                    class="fa-solid fa-sun color-8 cus-icon-sun"
+                                    class="position-absolute cus-icon-search color-3 fa-solid fa-magnifying-glass ms-3"
                                 ></i>
-                            </div>
+                                <input
+                                    type="text"
+                                    placeholder="Search"
+                                    class="fs-6 form-control form-control-sm pt-1 pb-1 rounded-pill cus-search-input"
+                                />
+                            </form>
                             <div
-                                class="ms-2 p-2 d-flex align-items-center position-relative"
+                                class="d-flex align-items-center justify-content-between"
                             >
-                                <a href="#">
-                                    <div
-                                        class="rounded-circle position-absolute cus-bg-size-sticker-number bg-primary d-flex align-items-center justify-content-center"
-                                    >
-                                        <span
-                                            class="fw-medium cs-font-size-sticker-number text-white"
-                                            >3</span
+                                <div
+                                    class="ms-2 p-2 d-flex align-items-center bg-color-7 cus-turn-theme rounded-circle justify-content-center"
+                                    role="button"
+                                    data-bs-toggle="tooltip"
+                                    data-bs-custom-class="custom-tooltip"
+                                    data-bs-placement="left"
+                                    data-bs-title="Switch theme"
+                                >
+                                    <i
+                                        class="fa-solid fa-sun color-8 cus-icon-sun"
+                                    ></i>
+                                </div>
+                                <div
+                                    class="ms-2 p-2 d-flex align-items-center position-relative"
+                                >
+                                    <a href="#">
+                                        <div
+                                            class="rounded-circle position-absolute cus-sticker-number bg-primary d-flex align-items-center justify-content-center"
                                         >
+                                            <span
+                                                class="fw-medium cs-font-size-sticker-number text-white"
+                                                >3</span
+                                            >
+                                        </div>
+                                        <i
+                                            class="fa-solid fa-bag-shopping color-12 fs-5"
+                                        ></i>
+                                    </a>
+                                </div>
+                                <div
+                                    class="ms-2 p-2 d-flex align-items-center position-relative"
+                                >
+                                    <a href="#">
+                                        <div
+                                            class="cus-sticker-bell bg-color-13 rounded-circle position-absolute"
+                                        ></div>
+                                        <i
+                                            class="fs-5 fa-regular fa-bell color-12"
+                                        ></i>
+                                    </a>
+                                </div>
+                                <div class="ms-2 fs-6 pt-2 ps-2 pb-2">
+                                    <a href="#">
+                                        <i
+                                            class="fa-regular fa-user color-12"
+                                        ></i
+                                    ></a>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+                <div>
+                    <div class="container">
+                        <div class="navbar d-flex align-items-center">
+                            <div class="dropdown">
+                                <button
+                                    class="btn cus-category-btn bg-transparent border border-0 color-17 d-flex align-items-center"
+                                    type="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false"
+                                >
+                                    <i class="fa-solid fa-bars"></i>
+                                    <span class="ps-1">Category</span>
+                                </button>
+                                <div class="dropdown-menu12">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="cus-category-item p-3">
+                                                <div
+                                                    class="d-flex p-1 align-items-center"
+                                                >
+                                                    <i
+                                                        class="text-primary fa-solid fa-shield"
+                                                    ></i>
+                                                    <h6
+                                                        class="mb-0 cus-title-category ms-2"
+                                                    >
+                                                        Collectibles & Art
+                                                    </h6>
+                                                </div>
+                                                <div
+                                                    class="d-lfex flex-column cus-category-list-item"
+                                                >
+                                                    <a
+                                                        href="#"
+                                                        class="d-block rounded p-1 mt-2 text-decoration-none color-16"
+                                                        >Collectibles</a
+                                                    >
+                                                    <a
+                                                        href="#"
+                                                        class="d-block rounded p-1 mt-2 text-decoration-none color-16"
+                                                        >Antiques</a
+                                                    >
+                                                    <a
+                                                        href="#"
+                                                        class="d-block rounded p-1 mt-2 text-decoration-none color-16"
+                                                        >Sports memorabilia
+                                                    </a>
+                                                    <a
+                                                        href="#"
+                                                        class="d-block rounded p-1 mt-2 text-decoration-none color-16"
+                                                        >Art</a
+                                                    >
+                                                </div>
+                                            </div>
+                                            <div class="cus-category-item p-3">
+                                                <div
+                                                    class="d-flex p-1 align-items-center"
+                                                >
+                                                    <i
+                                                        class="text-primary fa-solid fa-shield"
+                                                    ></i>
+                                                    <h6
+                                                        class="mb-0 cus-title-category ms-2"
+                                                    >
+                                                        Collectibles & Art
+                                                    </h6>
+                                                </div>
+                                                <div
+                                                    class="d-lfex flex-column cus-category-list-item"
+                                                >
+                                                    <a
+                                                        href="#"
+                                                        class="d-block rounded p-1 mt-2 text-decoration-none color-16"
+                                                        >Collectibles</a
+                                                    >
+                                                    <a
+                                                        href="#"
+                                                        class="d-block rounded p-1 mt-2 text-decoration-none color-16"
+                                                        >Antiques</a
+                                                    >
+                                                    <a
+                                                        href="#"
+                                                        class="d-block rounded p-1 mt-2 text-decoration-none color-16"
+                                                        >Sports memorabilia
+                                                    </a>
+                                                    <a
+                                                        href="#"
+                                                        class="d-block rounded p-1 mt-2 text-decoration-none color-16"
+                                                        >Art</a
+                                                    >
+                                                </div>
+                                            </div>
+                                            <div class="cus-category-item p-3">
+                                                <div
+                                                    class="d-flex p-1 align-items-center"
+                                                >
+                                                    <i
+                                                        class="text-primary fa-solid fa-shield"
+                                                    ></i>
+                                                    <h6
+                                                        class="mb-0 cus-title-category ms-2"
+                                                    >
+                                                        Collectibles & Art
+                                                    </h6>
+                                                </div>
+                                                <div
+                                                    class="d-lfex flex-column cus-category-list-item"
+                                                >
+                                                    <a
+                                                        href="#"
+                                                        class="d-block rounded p-1 mt-2 text-decoration-none color-16"
+                                                        >Collectibles</a
+                                                    >
+                                                    <a
+                                                        href="#"
+                                                        class="d-block rounded p-1 mt-2 text-decoration-none color-16"
+                                                        >Antiques</a
+                                                    >
+                                                    <a
+                                                        href="#"
+                                                        class="d-block rounded p-1 mt-2 text-decoration-none color-16"
+                                                        >Sports memorabilia
+                                                    </a>
+                                                    <a
+                                                        href="#"
+                                                        class="d-block rounded p-1 mt-2 text-decoration-none color-16"
+                                                        >Art</a
+                                                    >
+                                                </div>
+                                            </div>
+                                            <div class="cus-category-item p-3">
+                                                <div
+                                                    class="d-flex p-1 align-items-center"
+                                                >
+                                                    <i
+                                                        class="text-primary fa-solid fa-shield"
+                                                    ></i>
+                                                    <h6
+                                                        class="mb-0 cus-title-category ms-2"
+                                                    >
+                                                        Collectibles & Art
+                                                    </h6>
+                                                </div>
+                                                <div
+                                                    class="d-lfex flex-column cus-category-list-item"
+                                                >
+                                                    <a
+                                                        href="#"
+                                                        class="d-block rounded p-1 mt-2 text-decoration-none color-16"
+                                                        >Collectibles</a
+                                                    >
+                                                    <a
+                                                        href="#"
+                                                        class="d-block rounded p-1 mt-2 text-decoration-none color-16"
+                                                        >Antiques</a
+                                                    >
+                                                    <a
+                                                        href="#"
+                                                        class="d-block rounded p-1 mt-2 text-decoration-none color-16"
+                                                        >Sports memorabilia
+                                                    </a>
+                                                    <a
+                                                        href="#"
+                                                        class="d-block rounded p-1 mt-2 text-decoration-none color-16"
+                                                        >Art</a
+                                                    >
+                                                </div>
+                                            </div>
+                                            <div class="cus-category-item p-3">
+                                                <div
+                                                    class="d-flex p-1 align-items-center"
+                                                >
+                                                    <i
+                                                        class="text-primary fa-solid fa-shield"
+                                                    ></i>
+                                                    <h6
+                                                        class="mb-0 cus-title-category ms-2"
+                                                    >
+                                                        Collectibles & Art
+                                                    </h6>
+                                                </div>
+                                                <div
+                                                    class="d-lfex flex-column cus-category-list-item"
+                                                >
+                                                    <a
+                                                        href="#"
+                                                        class="d-block rounded p-1 mt-2 text-decoration-none color-16"
+                                                        >Collectibles</a
+                                                    >
+                                                    <a
+                                                        href="#"
+                                                        class="d-block rounded p-1 mt-2 text-decoration-none color-16"
+                                                        >Antiques</a
+                                                    >
+                                                    <a
+                                                        href="#"
+                                                        class="d-block rounded p-1 mt-2 text-decoration-none color-16"
+                                                        >Sports memorabilia
+                                                    </a>
+                                                    <a
+                                                        href="#"
+                                                        class="d-block rounded p-1 mt-2 text-decoration-none color-16"
+                                                        >Art</a
+                                                    >
+                                                </div>
+                                            </div>
+                                            <div class="cus-category-item p-3">
+                                                <div
+                                                    class="d-flex p-1 align-items-center"
+                                                >
+                                                    <i
+                                                        class="text-primary fa-solid fa-shield"
+                                                    ></i>
+                                                    <h6
+                                                        class="mb-0 cus-title-category ms-2"
+                                                    >
+                                                        Collectibles & Art
+                                                    </h6>
+                                                </div>
+                                                <div
+                                                    class="d-lfex flex-column cus-category-list-item"
+                                                >
+                                                    <a
+                                                        href="#"
+                                                        class="d-block rounded p-1 mt-2 text-decoration-none color-16"
+                                                        >Collectibles</a
+                                                    >
+                                                    <a
+                                                        href="#"
+                                                        class="d-block rounded p-1 mt-2 text-decoration-none color-16"
+                                                        >Antiques</a
+                                                    >
+                                                    <a
+                                                        href="#"
+                                                        class="d-block rounded p-1 mt-2 text-decoration-none color-16"
+                                                        >Sports memorabilia
+                                                    </a>
+                                                    <a
+                                                        href="#"
+                                                        class="d-block rounded p-1 mt-2 text-decoration-none color-16"
+                                                        >Art</a
+                                                    >
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <i
-                                        class="fa-solid fa-bag-shopping color-12 fs-5"
-                                    ></i>
-                                </a>
+                                </div>
                             </div>
-                            <div
-                                class="ms-2 p-2 d-flex align-items-center position-relative"
+                            <ul
+                                class="d-flex align-items-center list-unstyled mt-0 mb-0"
                             >
-                                <a href="#">
-                                    <div
-                                        class="cus-bg-size-sticker-bell bg-color-13 rounded-circle position-absolute"
-                                    ></div>
-                                    <i
-                                        class="fs-5 fa-regular fa-bell color-12"
-                                    ></i>
-                                </a>
-                            </div>
-                            <div class="ms-2 fs-6 p-2">
-                                <a href="#">
-                                    <i class="fa-regular fa-user color-12"></i
-                                ></a>
-                            </div>
+                                <li class="ps-4 cus-navigate-li">
+                                    <a
+                                        class="text-decoration-none color-12 cus-navigate-link"
+                                        href="#"
+                                        >Home</a
+                                    >
+                                </li>
+                                <li class="ps-4 cus-navigate-li">
+                                    <a
+                                        class="text-decoration-none color-12 cus-navigate-link"
+                                        href="#"
+                                        >My Favorites</a
+                                    >
+                                </li>
+                                <li class="ps-4 cus-navigate-li">
+                                    <a
+                                        class="text-decoration-none color-12 cus-navigate-link"
+                                        href="#"
+                                        >Products</a
+                                    >
+                                </li>
+                                <li class="ps-4 cus-navigate-li">
+                                    <a
+                                        class="text-decoration-none color-12 cus-navigate-link"
+                                        href="#"
+                                        >Wishlist</a
+                                    >
+                                </li>
+                                <li class="ps-4 cus-navigate-li">
+                                    <a
+                                        class="text-decoration-none color-12 cus-navigate-link"
+                                        href="#"
+                                        >Shipping Info</a
+                                    >
+                                </li>
+                                <li class="ps-4 cus-navigate-li">
+                                    <a
+                                        class="text-decoration-none color-12 cus-navigate-link"
+                                        href="#"
+                                        >Be a vendor</a
+                                    >
+                                </li>
+                                <li class="ps-4 cus-navigate-li">
+                                    <a
+                                        class="text-decoration-none color-12 cus-navigate-link"
+                                        href="#"
+                                        >Track order</a
+                                    >
+                                </li>
+                                <li class="ps-4 cus-navigate-li">
+                                    <a
+                                        class="text-decoration-none color-12 cus-navigate-link"
+                                        href="#"
+                                        >Check out</a
+                                    >
+                                </li>
+                            </ul>
                         </div>
-                    </nav>
+                    </div>
                 </div>
             </header>
             <main>b</main>

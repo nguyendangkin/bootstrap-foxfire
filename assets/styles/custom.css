@@ -14,6 +14,9 @@
     --color-13: #ed2000;
     --color-14: #373c48;
     --color-15: #ffffff;
+    --color-16: #000000;
+    --color-17: #31374a;
+    --color-18: #eff2f6;
 }
 
 /* color */
@@ -33,6 +36,10 @@
     color: var(--color-3)
 }
 
+.color-16 {
+    color: var(--color-16);
+}
+
 .color-8 {
     color: var(--color-8)
 }
@@ -46,36 +53,30 @@
 }
 
 
-
-/* font size */
-.cus-icon-search-size {
-    font-size: 0.8rem;
-}
-
 .cs-font-size-sticker-number {
     font-size: 0.8rem;
 }
 
-/* position */
-.cus-icon-search-position {
-    top: 38%;
-}
-/* padding */
-.cus-search-padding {
-    padding-left: 36px;
-}
-/* :: */
-.cus-search::placeholder {
-    opacity: 75%;
+.cus-icon-search {
+    top: 34%;
+    font-size: 0.8rem;
 }
 
-/* with height */
-.cus-bg-size-turn-theme {
+.cus-search-input {
+    padding-left: 36px;
+}
+
+.cus-search-input::placeholder {
+    opacity: 70% !important;
+    font-size: 0.9rem;
+}
+
+.cus-turn-theme {
     width: 2rem;
     height: 2rem;
 }
 
-.cus-bg-size-turn-theme:hover {
+.cus-turn-theme:hover {
     background-color: var(--color-8);
     transition: ease-in-out 0.3s;
 }
@@ -86,14 +87,14 @@
 
 }
 
-.cus-bg-size-sticker-number {
+.cus-sticker-number {
     width: 1.2rem;
     height: 1.2rem;
     top: 2px;
     right: -3px;
 }
 
-.cus-bg-size-sticker-bell {
+.cus-sticker-bell {
     width: .6rem;
     height: .6rem;
     top: 5px;
@@ -103,4 +104,29 @@
 .custom-tooltip {
     --bs-tooltip-bg: var(--color-14);
     --bs-tooltip-color: var(--color-15);
+}
+
+.cus-navigate-link {
+    font-size: 0.8rem;
+}
+
+.cus-navigate-li:hover > a {
+    color: var(--color-16);
+    transition: all ease 0.3s;
+}
+
+.cus-category-btn {
+    font-size: 0.8rem;
+}
+
+.cus-category-item .cus-title-category {
+    font-size: 0.8rem;
+}
+
+.cus-category-item .cus-category-list-item {
+    font-size: 0.8rem;
+}
+
+.cus-category-item .cus-category-list-item > a:hover {
+    background-color: var(--color-18);
 }
