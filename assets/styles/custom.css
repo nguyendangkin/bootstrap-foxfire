@@ -1,11 +1,11 @@
 :root {
-    --color-1: rgb(110 120 145);  /* logo text */
-    --color-2: rgb(245 247 250);  /* header color */
-    --color-3: rgb(138 148 173);  /* search icon */
-    --color-4: rgb(138 148 173);  /* default border color search input */
-    --color-5: rgb(159 166 188);  /* default search play-cho-le-der */
-    --color-6: rgb(49 55 74);       /* text search  */
-    --color-7: rgb(247 237 222); 
+    --color-1: rgb(110 120 145); /* logo text */
+    --color-2: rgb(245 247 250); /* header color */
+    --color-3: rgb(138 148 173); /* search icon */
+    --color-4: rgb(138 148 173); /* default border color search input */
+    --color-5: rgb(159 166 188); /* default search play-cho-le-der */
+    --color-6: rgb(49 55 74); /* text search  */
+    --color-7: rgb(247 237 222);
     --color-8: #e5780b;
     --color-9: #3874ff;
     --color-10: #3874ff;
@@ -21,15 +21,15 @@
 
 /* color */
 .bg-color-1 {
-    background-color: var(--color-2)
+    background-color: var(--color-2);
 }
 
 .bg-color-13 {
-    background-color: var(--color-13)
+    background-color: var(--color-13);
 }
 
 .bg-color-7 {
-    background-color: var(--color-7)
+    background-color: var(--color-7);
 }
 
 .color-3 {
@@ -41,7 +41,7 @@
 }
 
 .color-8 {
-    color: var(--color-8)
+    color: var(--color-8);
 }
 
 .color-12 {
@@ -49,7 +49,7 @@
 }
 
 .color-1 {
-    color: var(--color-1)
+    color: var(--color-1);
 }
 
 
@@ -64,6 +64,7 @@
 
 .cus-search-input {
     padding-left: 36px;
+
 }
 
 .cus-search-input::placeholder {
@@ -84,7 +85,6 @@
 .cus-icon-sun:hover {
     color: var(--color-15);
     transition: ease-in-out 0.3s;
-
 }
 
 .cus-sticker-number {
