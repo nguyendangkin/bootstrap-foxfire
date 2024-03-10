@@ -130,3 +130,26 @@
 .cus-category-item .cus-category-list-item > a:hover {
     background-color: var(--color-18);
 }
+
+
+.dropdown-menu {
+    min-width: 750px;
+    background-color: var(--color-15);
+}
+
+.dropdown-menu::before {
+    content: "";
+    position: absolute;
+    width: 1.5rem;
+    height: 1.5rem;
+    top: -10px;
+    left: 1.5rem;
+    transform: rotate(224deg);
+    border-radius: .25rem;
+    background-color: red;
+    box-shadow: 0 0.125rem 0.25rem rgba(0,0,0,.075);
+}
+
+.cus-category-footer {
+    font-size: 0.8rem;
+}
