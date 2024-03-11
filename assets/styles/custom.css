@@ -33,7 +33,7 @@
 }
 
 .color-3 {
-    color: var(--color-3)
+    color: var(--color-3);
 }
 
 .color-16 {
@@ -52,7 +52,6 @@
     color: var(--color-1);
 }
 
-
 .cs-font-size-sticker-number {
     font-size: 0.8rem;
 }
@@ -64,7 +63,6 @@
 
 .cus-search-input {
     padding-left: 36px;
-
 }
 
 .cus-search-input::placeholder {
@@ -95,8 +93,8 @@
 }
 
 .cus-sticker-bell {
-    width: .6rem;
-    height: .6rem;
+    width: 0.6rem;
+    height: 0.6rem;
     top: 5px;
     right: 7px;
 }
@@ -131,23 +129,9 @@
     background-color: var(--color-18);
 }
 
-
 .dropdown-menu {
     min-width: 750px;
     background-color: var(--color-15);
-}
-
-.dropdown-menu::before {
-    content: "";
-    position: absolute;
-    width: 1.5rem;
-    height: 1.5rem;
-    top: -10px;
-    left: 1.5rem;
-    transform: rotate(224deg);
-    border-radius: .25rem;
-    background-color: red;
-    box-shadow: 0 0.125rem 0.25rem rgba(0,0,0,.075);
 }
 
 .cus-category-footer {
