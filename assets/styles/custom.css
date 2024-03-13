@@ -17,6 +17,7 @@
     --color-16: #000000;
     --color-17: #31374a;
     --color-18: #eff2f6;
+    --color-19: rgb(222 226 230);
 }
 
 /* color */
@@ -136,4 +137,42 @@
 
 .cus-category-footer {
     font-size: 0.8rem;
+}
+
+.cus-container-drop-down::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 1.6rem;
+    height: 1.5rem;
+    background: var(--phoenix-black);
+    top: -13px;
+    left: 42px;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    background: var(--color-15);
+    border-radius: .25rem;
+    border-width: 2px 0 0 2px;
+    border-style: solid;
+    border-color: var(--color-19);
+    -webkit-box-shadow: 0 0.125rem 0.25rem rgba(0,0,0,.075);
+    box-shadow: 0 0.125rem 0.25rem rgba(0,0,0,.075);
+}
+
+.cus-dropdown-menu::before {
+    content: "";
+    position: absolute;
+    z-index: 10;
+    width: 1.6rem;
+    height: 1.9rem;
+    background: #ffffff;
+    top: -12px;
+    border-top-left-radius: .25rem;
+
+    left: 2.5rem;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+   
 }
