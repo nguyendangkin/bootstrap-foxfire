@@ -19,6 +19,8 @@
     --color-18: #eff2f6;
     --color-19: rgb(222 226 230);
     --color-20: #ffefca;
+    --color-21: #e5edff;
+
 }
 
 /* color */
@@ -28,6 +30,10 @@
 
 .bg-color-13 {
     background-color: var(--color-13);
+}
+
+.bg-color-21 {
+    background-color: var(--color-21);
 }
 
 .bg-color-7 {
@@ -40,6 +46,10 @@
 
 .color-3 {
     color: var(--color-3);
+}
+
+.color-17 {
+    color: var(--color-17);
 }
 
 .color-20 {
@@ -191,3 +201,19 @@
     height: 58px;
 }
 
+.cus-list-icon-btn:hover {
+    background-color: var(--color-11);
+}
+
+.cus-list-icon-btn:hover i {
+    color: var(--color-15);
+}
+
+.cus-label-below-icon {
+    font-size: 0.9rem;
+}
+
+.cus-label-below-icon:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--color-10);
+}
