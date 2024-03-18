@@ -223,10 +223,14 @@
     height: 58px;
 }
 
+.main-banner-container {
+    padding-left: 124px;
+    padding-right: 124px;
+}
+
 .banner-container {
     position: relative;
-    margin-left: 124px;
-    margin-right: 124px;
+ 
     background: linear-gradient(350.65deg, #35479f -9.32%, #9528ea 113.71%);
 }
 
@@ -243,7 +247,15 @@
 }
 
 .banner-container-image-right {
-
+    position: absolute;
+    background-repeat: no-repeat;
+    background-image: url('./../images/banner/whooping_banner_shape_2.png');
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-position: bottom left;
 }
 
 .banner-text__head {
@@ -267,9 +279,20 @@
     color: var(--color-18);
     font-size: 2.8rem;
     font-weight: 700;
-    padding-bottom: 80px;
+    padding-bottom: 40px;
 }
 
 .banner-info {
     padding-left: 120px;
+    padding-bottom: 130px;
+}
+
+.banner-text__btn > a {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.sub-banner-container {
+    padding-left: 124px;
+    padding-right: 124px;
 }
